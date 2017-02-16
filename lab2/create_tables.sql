@@ -6,8 +6,8 @@ create database imdb;
 CREATE TABLE Actors ( 
     idactors varchar(50) primary key,
     lname varchar(100),  
-    fname varchar(30), 
-    mname varchar(30), 
+    fname varchar(100), 
+    mname varchar(100), 
     gender varchar(30), 
     number varchar(50) 
 );
