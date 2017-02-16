@@ -4,7 +4,7 @@ create database imbd;
 \c imbd;
 
 CREATE TABLE Actors ( 
-    id_actors integer primary key,
+    idactors integer primary key,
     lname varchar(30),  
     fname varchar(30), 
     mname varchar(30), 
