@@ -25,7 +25,7 @@ CREATE TABLE Genres (
 
 CREATE TABLE Movies ( 
     idmovies varchar(50) primary key,
-    titles varchar(200), 
+    titles varchar(500), 
     year char(4),
     number varchar(50), 
     type varchar(50),
@@ -80,7 +80,7 @@ CREATE TABLE Cast_ (
     idmovies varchar(50) not null references Movies(idmovies), 
     idseries varchar(50) references Series(idseries),
     idactors varchar(50) not null references Actors(idactors),
-    character varchar(100), 
+    character varchar(500), 
     billing_position varchar(50)
 );
 
