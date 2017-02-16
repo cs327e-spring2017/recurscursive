@@ -1,7 +1,7 @@
 \c postgres;
-drop database if exists tickit;
-create database imbd;
-\c imbd;
+drop database if exists imdb;
+create database imdb;
+\c imdb;
 
 CREATE TABLE Actors ( 
     idactors integer primary key,
