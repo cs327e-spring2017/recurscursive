@@ -5,7 +5,7 @@ create database imdb;
 
 CREATE TABLE Actors ( 
     idactors varchar(50) primary key,
-    lname varchar(30),  
+    lname varchar(100),  
     fname varchar(30), 
     mname varchar(30), 
     gender varchar(30), 
@@ -15,7 +15,7 @@ CREATE TABLE Actors (
 CREATE TABLE Aka_names (
     idaka_names varchar(50) primary key,	
     idactors varchar(50) not null references Actors(idactors),
-    name varchar(50) 
+    name varchar(200) 
 );
 
 CREATE TABLE Genres (
@@ -25,7 +25,7 @@ CREATE TABLE Genres (
 
 CREATE TABLE Movies ( 
     idmovies varchar(50) primary key,
-    titles varchar(100), 
+    titles varchar(200), 
     year char(4),
     number varchar(50), 
     type varchar(50),
@@ -36,7 +36,7 @@ CREATE TABLE Movies (
 CREATE TABLE Aka_titles ( 
     idaka_titles varchar(50) primary key,
     idmovies varchar(50) not null references Movies(idmovies), 
-    title varchar(50),
+    title varchar(200),
     location varchar(50),
     year char(4)
 ); 
@@ -44,7 +44,7 @@ CREATE TABLE Aka_titles (
 CREATE TABLE Series ( 
     idseries varchar(50) primary key,
     idmovies varchar(50) not null references Movies(idmovies),
-    name varchar(100),
+    name varchar(200),
     season varchar(50),
     number varchar(50)
 );
@@ -53,7 +53,7 @@ CREATE TABLE Movies_genres (
     idmovies_genres varchar(50) primary key,
     idmovies varchar(50) not null references Movies(idmovies),
     idgenres varchar(50) not null references Genres(idgenres),
-    idseries varchar(50) not null references Series(idseries)
+    idseries varchar(50) references Series(idseries)
 );
 
 CREATE TABLE Keywords ( 
@@ -78,7 +78,7 @@ CREATE TABLE Movies_info (
 CREATE TABLE Cast_ ( 
     idcast varchar(50) primary key,
     idmovies varchar(50) not null references Movies(idmovies), 
-    idseries varchar(50) not null references Series(idseries),
+    idseries varchar(50) references Series(idseries),
     idactors varchar(50) not null references Actors(idactors),
     character varchar(100), 
     billing_position varchar(50)
