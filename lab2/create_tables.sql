@@ -5,7 +5,7 @@ create database imdb;
 
 CREATE TABLE Actors ( 
     idactors varchar(50) primary key,
-    lname varchar(100),  
+    lname varchar(200),  
     fname varchar(100), 
     mname varchar(100), 
     gender varchar(30), 
@@ -44,7 +44,7 @@ CREATE TABLE Aka_titles (
 CREATE TABLE Series ( 
     idseries varchar(50) primary key,
     idmovies varchar(50) not null references Movies(idmovies),
-    name varchar(200),
+    name varchar(300),
     season varchar(50),
     number varchar(50)
 );
