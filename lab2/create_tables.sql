@@ -1,5 +1,4 @@
 \c postgres;
-drop database if exists imbd;
 drop database if exists imdb;
 create database imdb;
 \c imdb;
