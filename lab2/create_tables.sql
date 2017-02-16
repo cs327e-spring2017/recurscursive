@@ -80,7 +80,7 @@ CREATE TABLE Cast_ (
     idmovies varchar(50) not null references Movies(idmovies), 
     idseries varchar(50) references Series(idseries),
     idactors varchar(50) not null references Actors(idactors),
-    character varchar(500), 
+    character varchar(2000), 
     billing_position varchar(50)
 );
 
