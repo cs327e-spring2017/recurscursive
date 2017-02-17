@@ -3,6 +3,16 @@ drop database if exists imdb;
 create database imdb;
 \c imdb;
 
+CREATE TABLE Movies ( 
+    idmovies varchar(50) primary key,
+    titles varchar(500), 
+    year char(4),
+    number varchar(50), 
+    type varchar(50),
+    location varchar(50),
+    language varchar(50)
+);
+
 CREATE TABLE Actors ( 
     idactors varchar(50) primary key,
     lname varchar(200),  
@@ -12,10 +22,9 @@ CREATE TABLE Actors (
     number varchar(50) 
 );
 
-CREATE TABLE Aka_names (
-    idaka_names varchar(50) primary key,	
-    idactors varchar(50) not null references Actors(idactors),
-    name varchar(200) 
+CREATE TABLE Keywords ( 
+    idkeywords varchar(50) primary key,
+    keyword varchar(50) 
 );
 
 CREATE TABLE Genres (
@@ -23,14 +32,10 @@ CREATE TABLE Genres (
     genre varchar(30)
 );
 
-CREATE TABLE Movies ( 
-    idmovies varchar(50) primary key,
-    titles varchar(500), 
-    year char(4),
-    number varchar(50), 
-    type varchar(50),
-    location varchar(50),
-    language varchar(50)
+CREATE TABLE Aka_names (
+    idaka_names varchar(50) primary key,	
+    idactors varchar(50) not null references Actors(idactors),
+    name varchar(200) 
 );
 
 CREATE TABLE Aka_titles ( 
@@ -54,11 +59,6 @@ CREATE TABLE Movies_genres (
     idmovies varchar(50) not null references Movies(idmovies),
     idgenres varchar(50) not null references Genres(idgenres),
     idseries varchar(50) references Series(idseries)
-);
-
-CREATE TABLE Keywords ( 
-    idkeywords varchar(50) primary key,
-    keyword varchar(50) 
 );
 
 
