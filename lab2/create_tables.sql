@@ -8,7 +8,7 @@ CREATE TABLE Movies (
     titles varchar(500), 
     year char(4),
     number varchar(50), 
-    type varchar(50),
+    type integer,
     location varchar(50),
     language varchar(50)
 );
@@ -18,7 +18,7 @@ CREATE TABLE Actors (
     lname varchar(200),  
     fname varchar(100), 
     mname varchar(100), 
-    gender varchar(30), 
+    gender integer, 
     number varchar(50) 
 );
 

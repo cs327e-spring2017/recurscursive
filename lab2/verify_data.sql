@@ -21,8 +21,6 @@ SELECT COUNT(*) FROM Movies_Keywords; /*Equal to length of row (From Piazza) + 1
 
 SELECT COUNT(*) FROM Cast_; /*Equal to length of row (From Piazza) + 1*/
 
+SELECT genre FROM Genres WHERE idgenres = '1'; /*Should be Documentary*/
 
-
-
-
-
+SELECT genre FROM Genres WHERE idgenres = '2'; /*Should be Reality*/
