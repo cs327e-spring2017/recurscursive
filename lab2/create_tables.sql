@@ -32,13 +32,13 @@ CREATE TABLE Genres (
     genre varchar(30)
 );
 
-CREATE TABLE Aka_names (
+CREATE TABLE Aka_Names (
     idaka_names varchar(50) primary key,	
     idactors varchar(50) not null references Actors(idactors),
     name varchar(200) 
 );
 
-CREATE TABLE Aka_titles ( 
+CREATE TABLE Aka_Titles ( 
     idaka_titles varchar(50) primary key,
     idmovies varchar(50) not null references Movies(idmovies), 
     title varchar(200),
@@ -54,7 +54,7 @@ CREATE TABLE Series (
     number varchar(50)
 );
 
-CREATE TABLE Movies_genres (
+CREATE TABLE Movies_Genres (
     idmovies_genres varchar(50) primary key,
     idmovies varchar(50) not null references Movies(idmovies),
     idgenres varchar(50) not null references Genres(idgenres),
@@ -62,14 +62,14 @@ CREATE TABLE Movies_genres (
 );
 
 
-CREATE TABLE Movies_keywords (
+CREATE TABLE Movies_Keywords (
     idmovies_keywords varchar(50) primary key,
     idmovies varchar(50) not null references Movies(idmovies),
     idkeywords varchar(50) not null references Keywords(idkeywords),
-    idseries varchar(50)
+    idseries varchar(50) 
 );
 
-CREATE TABLE Movies_info (
+CREATE TABLE Movies_Info (
     idmovies_info varchar(50) primary key,
     idmovies varchar(50) not null references Movies(idmovies),
     idmovies_keywords varchar(50) not null references Movies_keywords(idmovies_keywords) 

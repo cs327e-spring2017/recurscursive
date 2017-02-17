@@ -10,7 +10,7 @@
 
 \copy Aka_Names from 'c:/Users/Elias/full/aka_names.csv' (header FALSE, format csv, delimiter ',', encoding 'UTF8');
 
-\copy Aka_titles from 'c:/Users/Elias/full/Aka_titles.csv' (header FALSE, format csv, delimiter ',', encoding 'UTF8');
+\copy Aka_Titles from 'c:/Users/Elias/full/aka_titles.csv' (header FALSE, format csv, delimiter ',', encoding 'UTF8');
 
 \copy Series from 'c:/Users/Elias/full/series.csv' (header FALSE, format csv, delimiter ',', encoding 'UTF8');
 
