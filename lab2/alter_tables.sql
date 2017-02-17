@@ -9,7 +9,7 @@ alter table Movies_Genres drop column idseries; /*Deleting empty columns*/
 
 alter table Movies_Keywords drop column idseries; /*Deleting empty columns*/
 
-alter table Actors alter column gender TYPE char(1);
+alter table Actors alter column gender TYPE char(1); /*Changing necessary file type*/
 
-alter table Movies alter column type TYPE char(3);
+alter table Movies alter column type TYPE char(3); /*Changing necessary file type*/
 
