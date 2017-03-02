@@ -1,0 +1,48 @@
+Movies
+	idmovies 
+	titles
+	year
+	number - empty
+	type
+Actors
+	idactors
+	lname - inconsistent 
+	mname - inconsistent
+	fname
+	number -empty
+Keywords
+	idkeywords
+	keyword
+Genres
+	idgenres
+	genres
+Aka_Names
+	idaka_names
+	idactors
+	name
+Aka_Titles
+	idaka_titles
+	id_movies
+	title
+	location
+	year
+Series
+	idseries
+	idmovies
+	name
+	season
+	number
+Movies_Genres
+	idmovies_genres
+	idmovies
+	idgenres
+Movies_Keywords
+	idmovies_keywords
+	idmovies
+	idkeywords
+Cast_
+	idmovies 
+	idseries - empty
+	idactors
+	character
+	billing_position
