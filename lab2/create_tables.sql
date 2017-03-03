@@ -7,6 +7,7 @@ CREATE TABLE Movies (
     idmovies integer primary key,
     titles varchar(500), 
     year integer,
+    number varchar(50),
     type integer,
     location varchar(50),
     language varchar(50)
@@ -17,7 +18,8 @@ CREATE TABLE Actors (
     lname varchar(200),  
     fname varchar(100), 
     mname varchar(100), 
-    gender integer, 
+    gender integer,
+    number varchar(50)
 );
 
 CREATE TABLE Keywords ( 
@@ -71,7 +73,8 @@ CREATE TABLE Movies_Keywords (
 CREATE TABLE Cast_ ( 
     idcast integer primary key,
     idmovies integer not null references Movies(idmovies), 
-    idactors integer not null references Actors(idactors),
+    idactors integer references Actors(idactors),
+    idseries integer,
     character varchar(2000), 
     billing_position varchar(50)
 );
