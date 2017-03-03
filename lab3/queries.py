@@ -60,32 +60,58 @@ def example_three(cursor):
     else:
         print('No movie correspondes to the title: ' + title)
 
-def query_one():
-    pass
+def query_one(cursor):
+    query = "SELECT MAX(season) FROM Series;"
+    result = run_query(query, cursor)
+    print_table(result)
+    
+def query_two(cursor):
+    season = input('Choose number of seasons: ')
+    query = "SELECT name FROM Series WHERE season = " + season + " ORDER BY name;"
+    result = run_query(query, cursor)
+    print_table(result)
 
-def query_two():
-    pass
+def query_three(cursor):
+    year = input('Choose a year: ')
+    query = "SELECT COUNT(idmovies) FROM Movies WHERE year = " + year + ";"
+    result = run_query(query, cursor)
+    print_table(result)
+    
+def query_four(cursor):
+    query = "SELECT COUNT(Movies_Genres.idmovies) FROM Movies_Genres INNER JOIN Movies ON (Movies_Genres.idmovies = Movies.idmovies) WHERE Movies_Genres.idgenres = 15;"
+    result = run_query(query, cursor)
+    print_table(result)
 
-def query_three():
-    pass
+def query_five(cursor):
+    query = "SELECT title FROM Aka_Titles GROUP BY idaka_titles HAVING location = 'Germany';"
+    result = run_query(query, cursor)
+    print_table(result)
+    
+def query_six(cursor):
+    fname = input('Please enter a first name: ')
+    query = "SELECT lname FROM Actors GROUP BY idactors HAVING fname = '" + fname + "';"
+    result = run_query(query, cursor)
+    print_table(result)
 
-def query_four():
-    pass
+def query_seven(cursor):
+    fname = input('Please enter an actors first name: ')
+    lname = input('Please enter an actors last name: ')
+    query = "SELECT COUNT(Cast_.idcast) FROM Cast_ INNER JOIN Actors ON (Cast_.idactors = Actors.idactors) WHERE Actors.fname = '" + fname + "' AND Actors.lname = '" + lname + "';"
+    result = run_query(query, cursor)
+    print_table(result)
+    
+def query_eight(cursor):
+    name = input('Please enter a character name: ')
+    query = "SELECT COUNT(Cast_.idmovies) FROM Cast_ INNER JOIN Movies_Genres ON (Cast_.idmovies = Movies_Genres.idmovies) WHERE Cast_.character = '" + name + "';"
+    result = run_query(query, cursor)
+    print_table(result)
+    
+def query_nine(cursor):
+    query = "SELECT COUNT(Actors.lname) FROM Actors LEFT OUTER JOIN Cast_ ON (Actors.idactors = Cast_.idactors) GROUP BY Actors.lname ORDER BY COUNT(Actors.lname) DESC LIMIT 10;"
+    result = run_query(query, cursor)
+    print_table(result)
 
-def query_five():
-    pass
-
-def query_six():
-    pass
-
-def query_seven():
-    pass
-
-def query_eight():
-    pass
-
-def query_nine():
-    pass
-
-def query_ten():
-    pass
+def query_ten(cursor):
+    query = "SELECT Movies.year,COUNT(Movies.idmovies) FROM Movies INNER JOIN Movies_Genres ON (Movies.idmovies = Movies_Genres.idmovies) GROUP BY Movies.year ORDER BY COUNT(Movies.year) DESC LIMIT 10;"
+    result = run_query(query, cursor)
+    print_table(result)
