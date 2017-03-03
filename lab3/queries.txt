@@ -1,1 +1,19 @@
-queries.txt
+1) Which series had the most seasons - max aggregate function on series.season
+
+2) Which Genre is the most common in the db - max aggregate function on genres.genre
+
+3) Total number of movies made in 2005 - count aggregate function on movies.year
+
+4) How many movies in 2007 were sci-fi movies - groupby year - genre
+
+5) How many horror movies were made in germany - groupby genre-aka_titles
+
+6)
+
+7)
+
+8)
+
+9)
+
+10)
