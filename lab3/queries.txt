@@ -1,4 +1,4 @@
-1) What is the maximum number of seasons that a Series has? (Aggregate)
+1) Who are the actors in a given movie? (inner join, inner join, where)
 
 2) Which series had the most seasons? (Where, orderby)
 

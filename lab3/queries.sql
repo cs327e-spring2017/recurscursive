@@ -1,4 +1,5 @@
-SELECT MAX(season) FROM Series;
+/*SELECT MAX(season) FROM Series;*/
+SELECT fname, lname from Actors join Cast_ On (Cast_.idactors = Actors.idactors) join Movies On (Cast_.idmovies = Movies.idmovies) where title = 'speed';
 
 SELECT name FROM Series WHERE season = '99' ORDER BY name;
 
