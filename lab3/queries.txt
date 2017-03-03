@@ -1,19 +1,19 @@
-1) Which series had the most seasons - max aggregate function on series.season
+1) What is the maximum number of seasons that a Series has? (Aggregate)
 
-2) Which Genre is the most common in the db - max aggregate function on genres.genre
+2) Which series had the most seasons? (Where, orderby)
 
-3) Total number of movies made in 2005 - count aggregate function on movies.year
+3) Total number of movies made in 2005? (aggregate, where)
 
-4) How many movies in 2007 were sci-fi movies - groupby year - genre
+4) How many movies are sci-fi movies? - (aggregate, inner join, where)
 
-5) Which actor appeared in the most comedy movies - groupby actor (fname/lname) - genres
+5) How many movies were made in Germany? - (groupby, having) 
 
-6) How many movies were made in Germany - inner join idmovies and aka_titles (groupby)
+6) What are the last names of all actors whose first names are Elias? (group by, having)
 
-7)
+7) How many casts has Jennifer Aniston been a part of? (aggregate, inner join, where)
 
-8)
+8) How many characters in movies are named Rick? (aggregate, inner join, where)
 
-9)
+9) What is the count of the 10 most common last names of Actors? (aggregate, outer join, group by, order by, aggregate)
 
-10)
+10) In descending order, which years had the most new movies? (aggregate, inner join, group by, order by, aggregate)
