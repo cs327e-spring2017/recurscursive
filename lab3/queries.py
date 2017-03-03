@@ -61,7 +61,8 @@ def example_three(cursor):
         print('No movie correspondes to the title: ' + title)
 
 def query_one(cursor):
-    query = "SELECT MAX(season) FROM Series;"
+    title = input('Choose a movie: ')
+    query = "SELECT fname, lname from Actors join Cast_ On (Cast_.idactors = Actors.idactors) join Movies On (Cast_.idmovies = Movies.idmovies) where title = "' + title + '";"
     result = run_query(query, cursor)
     print_table(result)
     

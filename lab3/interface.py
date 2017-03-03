@@ -11,7 +11,7 @@ if cursor is None:
 
 while running:
 	print("\n=======================IMDB COMMAND MENU================================")
-	print("| 1. What is the maximum number of seasons that a Series has?            |")
+	print("| 1. Who are the actors in a given movie?					            |")
 	print("| 2. How many series had a given number of seasons?                      |")
 	print("| 3. How many movies were made in a given year?                          |")
 	print("| 4. How many movies are sci-fi movies?                                  |")
