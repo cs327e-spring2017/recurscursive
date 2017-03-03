@@ -6,9 +6,9 @@
 
 4) How many movies in 2007 were sci-fi movies - groupby year - genre
 
-5) How many horror movies were made in germany - groupby genre-aka_titles
+5) Which actor appeared in the most comedy movies - groupby actor (fname/lname) - genres
 
-6)
+6) How many movies were made in Germany - inner join idmovies and aka_titles (groupby)
 
 7)
 
