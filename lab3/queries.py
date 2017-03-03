@@ -62,13 +62,13 @@ def example_three(cursor):
 
 def query_one(cursor):
     title = input('Choose a movie: ')
-    query = "SELECT fname, lname from Actors join Cast_ On (Cast_.idactors = Actors.idactors) join Movies On (Cast_.idmovies = Movies.idmovies) where title = "' + title + '";"
+    query = "SELECT fname, lname from Actors join Cast_ On (Cast_.idactors = Actors.idactors) join Movies On (Cast_.idmovies = Movies.idmovies) where title = '" + title + "';"
     result = run_query(query, cursor)
     print_table(result)
     
 def query_two(cursor):
     season = input('Choose number of seasons: ')
-    query = "SELECT name FROM Series WHERE season = " + season + " ORDER BY name;"
+    query = "SELECT name FROM Series WHERE season = '" + season + "' ORDER BY name;"
     result = run_query(query, cursor)
     print_table(result)
 

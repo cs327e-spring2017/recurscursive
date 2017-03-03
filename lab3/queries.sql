@@ -1,4 +1,3 @@
-/*SELECT MAX(season) FROM Series;*/
 SELECT fname, lname from Actors join Cast_ On (Cast_.idactors = Actors.idactors) join Movies On (Cast_.idmovies = Movies.idmovies) where title = 'speed';
 
 SELECT name FROM Series WHERE season = '99' ORDER BY name;
@@ -18,3 +17,5 @@ SELECT COUNT(Cast_.idmovies) FROM Cast_ INNER JOIN Movies_Genres ON (Cast_.idmov
 SELECT COUNT(Actors.lname) FROM Actors LEFT OUTER JOIN Cast_ ON (Actors.idactors = Cast_.idactors) GROUP BY Actors.lname ORDER BY COUNT(Actors.lname) DESC LIMIT 10; 
 
 SELECT Movies.year,COUNT(Movies.idmovies) FROM Movies INNER JOIN Movies_Genres ON (Movies.idmovies = Movies_Genres.idmovies) GROUP BY Movies.year ORDER BY COUNT(Movies.year) DESC LIMIT 10;
+
+/*SELECT MAX(season) FROM Series;*/

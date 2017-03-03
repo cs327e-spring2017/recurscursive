@@ -1,7 +1,7 @@
 import sys
 from queries import *
 
-COMMAND_COUNT = 12
+COMMAND_COUNT = 11
 running = True
 
 cursor = connect()
