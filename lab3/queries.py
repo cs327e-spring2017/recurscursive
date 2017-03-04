@@ -33,7 +33,7 @@ def run_query(query, cursor):
     return rows
 
 def example_one(cursor):
-    query = "SELECT count(*) from actors"
+    query = SELECT count(*) from actors
     result = run_query(query, cursor)
     print_table(result)
 
@@ -62,7 +62,7 @@ def example_three(cursor):
 
 def query_one(cursor):
     title = input('Choose a movie: ')
-    query = "SELECT fname, lname from Actors join Cast_ On (Cast_.idactors = Actors.idactors) join Movies On (Cast_.idmovies = Movies.idmovies) where title = '" + title + "';"
+    query = "SELECT fname, lname FROM Actors JOIN Cast_ ON (Cast_.idactors = Actors.idactors) JOIN Movies ON (Cast_.idmovies = Movies.idmovies) WHERE Movies.titles = '" + title + "';"
     result = run_query(query, cursor)
     print_table(result)
     
