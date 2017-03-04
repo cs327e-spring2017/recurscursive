@@ -1,6 +1,6 @@
 # Feel free to define your own helper methods.
 import psycopg2
-from c:/Users/Elias/Desktop/config.py import db
+from config import db
 
 def connect():
     try:
@@ -33,7 +33,7 @@ def run_query(query, cursor):
     return rows
 
 def example_one(cursor):
-    query = SELECT count(*) from actors
+    query = 'SELECT count(*) from actors'
     result = run_query(query, cursor)
     print_table(result)
 
