@@ -6,13 +6,13 @@
 
 4) How many movies are sci-fi movies? - (aggregate, inner join, where)
 
-5) How many movies were made in Germany? - (groupby, having) 
+5) Which movies were made in Germany? - (groupby, having) 
 
 6) What are the last names of actors with a given first names? (group by, having)
 
 7) How many casts is a given actor a part of? (aggregate, inner join, where)
 
-8) How many characters in movies have a given name? (aggregate, inner join, where)
+8) How many times does a given character name appear across all movies? (aggregate, inner join, where)
 
 9) What is the count of the 10 most common last names of Actors? (aggregate, outer join, group by, order by, aggregate)
 
