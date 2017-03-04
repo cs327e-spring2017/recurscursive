@@ -1,6 +1,6 @@
 # Feel free to define your own helper methods.
 import psycopg2
-from config import db
+from c:/Users/Elias/Desktop/config.py import db
 
 def connect():
     try:

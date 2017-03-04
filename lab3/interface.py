@@ -34,25 +34,25 @@ while running:
 		continue
 	
 	if choice == 1:
-		example_one(cursor)
+		query_one(cursor)
 	elif choice == 2:
-		example_two(cursor)
+		query_two(cursor)
 	elif choice == 3:
-		example_three(cursor)
+		query_three(cursor)
 	elif choice == 4:
-		example_four(cursor)
+		query_four(cursor)
 	elif choice == 5:
-		example_five(cursor)
+		query_five(cursor)
 	elif choice == 6:
-		example_six(cursor)
+		query_six(cursor)
 	elif choice == 7:
-		example_seven(cursor)
+		query_seven(cursor)
 	elif choice == 8:
-		example_eight(cursor)
+		query_eight(cursor)
 	elif choice == 9:
-		example_nine(cursor)
+		query_nine(cursor)
 	elif choice == 10:
-		example_ten(cursor)
+		query_ten(cursor)
 	elif choice == 11:
 		print('Exiting Command Menu...')
 		running = False
