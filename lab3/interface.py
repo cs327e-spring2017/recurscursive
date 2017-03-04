@@ -28,6 +28,8 @@ while running:
 	try:
 		choice = int(choice)
 		if choice > COMMAND_COUNT:
+			raise ValueError
+		if choice < 1:
 			raise ValueError  
 	except ValueError as err:
 		print('Not a Valid Command.')
