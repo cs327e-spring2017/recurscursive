@@ -1,4 +1,4 @@
-CREATE INDEX movie_title_idx ON Movies(titles);
+CREATE INDEX movie_title_idx ON Movies(title);
 
 CREATE INDEX name_idx ON Series(season);
 
