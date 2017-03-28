@@ -1,1 +1,3 @@
-This is where queries will go.
+1) What is the most popular song in a given year (input year)? Use songs_summary and songs_popularity from "Millionsongs"
+2) What artist has the most "artist credits" across all tracks? (reword) Use recording, artist credit, and track from "musicbrainz" 
+3) 
