@@ -5,7 +5,7 @@
 5) What year did the label that made <insert song> begin? Use label from "musicbrainz" ;labels, releases, releases_labels in "Discog"
 6) How many albums had at least 10 tracks, were released in vinyl, and were released in Sweden? Use medium, medium_format, release, release_country, country_area, area from "Musicbrainz"
 7) How many orchestrial artists performed in studios? Use artist_type, artist, area, place, place_type from "Musicbrainz"
-8) What is the most popular song in a given year (input year)? Use songs_summary and songs_popularity from "Millionsongs"
+8) How many songs released prior to a given year (input year) did a specific user play? Use songs_summary and songs_popularity from "Millionsongs"
 9) What is the "artist term" and/or "mbtag" given a specific artist id? Use artist_term, artist_mbtag, and artists from "Millionsongs"
 10) How many rock songs were released in the US? Use releases, genres, and releases_genre from "Discog"
 11) How many female artists are from islands? Use gender, artist, area, area_type from "Musicbrainz"
