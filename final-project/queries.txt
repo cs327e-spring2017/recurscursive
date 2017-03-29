@@ -1,3 +1,16 @@
-1) What is the most popular song in a given year (input year)? Use songs_summary and songs_popularity from "Millionsongs"
-2) What artist has the most "artist credits" across all tracks? (reword) Use recording, artist credit, and track from "musicbrainz" 
-3) 
+1) What artist has the most "artist credits" across all s? (reword) Use recording, artist credit, and track from "musicbrainz" 
+2) How many performances were at a given place (list example place) Use place from "musicbrainz" <----------review 
+3) How many songs were realeased in cassette form in a given year (user input year) Use medium from "musicbrainz" 
+4) What is the total number of tracks released by a given artist? Use Artist, releases, release_artist from "Discog" 
+5) What year did the label that made <insert song> begin? Use label from "musicbrainz" ;labels, releases, releases_labels in "Discog"
+6) How many albums had at least 10 tracks, were released in vinyl, and were released in Sweden? Use medium, medium_format, release, release_country, country_area, area from "Musicbrainz"
+7) How many orchestrial artists performed in studios? Use artist_type, artist, area, place, place_type from "Musicbrainz"
+8) What is the most popular song in a given year (input year)? Use songs_summary and songs_popularity from "Millionsongs"
+9) What is the artist term given a specific artist id? Use artist_term and artists from "Millionsongs"
+10) How many rock songs were released in the US? Use releases, genres, and releases_genre from "Discog"
+11) How many female artists are from islands? Use gender, artist, area, area_type from "Musicbrainz"
+12)
+
+
+28/30
+2 cross both DBs
