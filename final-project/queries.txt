@@ -1,13 +1,22 @@
 1) What artist has the most "artist credits" (featured) across all songs? (reword) Use recording, artist credit, artist_credit_name from "musicbrainz" 
-2) How many official German releases are in the Digipak packaging? Use Release, release_packaging, release_Status, language
-How many stringed instruments are played at a given festival event? Use artist, event, event_type istrument, instrument type from "musicbrainz" 
+
+2) How many official German releases are in the Digipak packaging? Use Release, release_packaging, release_Status, language from "musicbrainz"
+
 3) How many songs were released in cassette form in a given year (user input year) Use medium and medium_format from "musicbrainz" 
 4) What is the total number of tracks released by a given artist? Use Artist, releases, release_artist from "Discog" 
+
 5) What year did the label that made <insert song> begin? Use label from "musicbrainz" ;labels, releases, releases_labels in "Discog"
+
 6) How many albums had at least 10 tracks, were released in vinyl, and were released in Sweden? Use medium, medium_format, release, release_country, area from "Musicbrainz"
+
 7) How many orchestrial artists performed in studios? Use artist_type, artist, area, place, place_type from "Musicbrainz"
+
 8) What is the total play count in a given year (input year) a specific user played? Use songs_summary and songs_popularity from "Millionsongs"
+
 9) What is the "artist term" and/or "mbtag" given a specific artist id? Use artist_term, artist_mbtag, and artists from "Millionsongs"
+
 10) How many rock songs were released in the US? Use releases, genres, and releases_genre from "Discog"
+
 11) How many female artists are from islands? Use gender, artist, area, area_type from "Musicbrainz"
+
 12) What is the type of a given work? Use work and work_type from "Musicbrainz"
