@@ -8,7 +8,7 @@
 
 5) In what country is the label that made <insert album>? Use Area and label from "musicbrainz" ;labels, releases, releases_labels in "Discog"
 
-6) How many albums had at least 10 tracks and were released in Sweden? Use release, release_unknown_country, area from "Musicbrainz"
+6) How many albums had at least 10 tracks and were released in Sweden? Use release, release_unknown_country from "Musicbrainz"
 
 7) How many orchestrial artists performed in studios? Use artist_type, artist, area, place, place_type from "Musicbrainz"
 
