@@ -6,7 +6,7 @@
 
 4) What is the total number of tracks released by a given artist? Use Artist, releases, release_artist from "Discog" 
 
-5) What year did the label that made <insert song> begin? Use label from "musicbrainz" ;labels, releases, releases_labels in "Discog"
+5) In what country is the label that made <insert song>? Use Area and label from "musicbrainz" ;labels, releases, releases_labels in "Discog"
 
 6) How many albums had at least 10 tracks and were released in Sweden? Use release, release_unknown_country, area from "Musicbrainz"
 
