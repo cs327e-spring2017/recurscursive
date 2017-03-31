@@ -1,23 +1,35 @@
-1) What artist has the most "artist credits" (featured) across all recordings? Use recording, artist credit, artist_credit_name from "musicbrainz" 
+1) What artist has the most "artist credits" (featured) across all recordings? 
+-----Use recording, artist credit, artist_credit_name from "musicbrainz" 
 
-2) How many official German releases are in the Digipak packaging? Use Release, release_packaging, release_Status, language from "musicbrainz"
+2) How many official German releases are in the Digipak packaging? 
+-----Use Release, release_packaging, release_Status, language from "musicbrainz"
 
-3) How many songs were released in cassette form in a given year (user input year)? Use medium and medium_format from "musicbrainz
+3) How many songs were released in cassette form in a given year (user input year)? 
+-----Use medium and medium_format from "musicbrainz
 
-4) What is the total number of tracks released by a given artist? Use Artist, releases, release_artist from "Discog" 
+4) What is the total number of tracks released by a given artist? 
+-----Use Artist, releases, release_artist from "Discog" 
 
-5) In what country is the label that made <insert album>? Use Area and label from "musicbrainz" ;labels, releases, releases_labels in "Discog"
+5) In what country is the label that made <insert album>? 
+-----Use Area and label from "musicbrainz" ;labels, releases, releases_labels in "Discog"
 
-6) How many albums had at least 10 tracks and were released in Sweden? Use release, release_unknown_country from "Musicbrainz"
+6) How many albums had at least 10 tracks and were released in Sweden? 
+-----Use release, release_unknown_country from "Musicbrainz"
 
-7) How many orchestrial artists performed in studios? Use artist_type, artist, area, place, place_type from "Musicbrainz"
+7) How many orchestrial artists performed in studios? 
+-----Use artist_type, artist, area, place, place_type from "Musicbrainz"
 
-8) What is the total play count in a given year (input year) a specific user played? Use songs_summary and songs_popularity from "Millionsongs"
+8) What is the total play count in a given year (input year) a specific user played? 
+-----Use songs_summary and songs_popularity from "Millionsongs"
 
-9) What is the "artist term" and/or "mbtag" given a specific artist id? Use artist_term, artist_mbtag, and artists from "Millionsongs"
+9) What is the "artist term" and/or "mbtag" given a specific artist id? 
+-----Use artist_term, artist_mbtag, and artists from "Millionsongs"
 
-10) How many rock songs were released in the US? Use releases, genres, and releases_genre from "Discog"
+10) How many rock songs were released in the US? 
+-----Use releases, genres, and releases_genre from "Discog"
 
-11) How many female artists are from islands? Use gender, artist, area, area_type from "Musicbrainz"
+11) How many female artists are from islands? 
+-----Use gender, artist, area, area_type from "Musicbrainz"
 
-12) In what year was a given song released? Use recording "Musicbrainz" ; song_summary from "Millionsong"
+12) In what year was a given song released?
+-----Use recording "Musicbrainz" ; song_summary from "Millionsong"
