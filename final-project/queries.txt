@@ -20,4 +20,4 @@
 
 11) How many female artists are from islands? Use gender, artist, area, area_type from "Musicbrainz"
 
-12) What is the type of a given work? Use work and work_type from "Musicbrainz"
+12) In what year was a given song released? Use recording "Musicbrainz" ; song_summary from "Millionsong"
