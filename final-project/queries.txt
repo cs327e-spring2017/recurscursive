@@ -1,4 +1,4 @@
-1) What artist has the most "artist credits" (featured) across all songs? (reword) Use recording, artist credit, artist_credit_name from "musicbrainz" 
+1) What artist or band has the most "artist credits" (featured) across all songs? (reword) Use recording, artist credit, artist_credit_name from "musicbrainz" 
 
 2) How many official German releases are in the Digipak packaging? Use Release, release_packaging, release_Status, language from "musicbrainz"
 
