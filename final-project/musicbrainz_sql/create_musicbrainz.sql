@@ -16,7 +16,7 @@ create table Area(
    end_date_month varchar(10),
    end_date_day varchar(10),
    ended varchar(10),
-   comment varchar(0)
+   comment varchar(1000)
 );
 
 create table Area_Type(
@@ -24,7 +24,7 @@ create table Area_Type(
    name varchar(10),
    parent varchar(10),
    child_order integer,
-   description decimal(168,0),
+   description decimal(38,1),
    gid varchar(40)
 );
 
@@ -42,7 +42,7 @@ create table Artist(
    type integer,
    area varchar(10),
    gender varchar(10),
-   comment varchar(0),
+   comment varchar(1000),
    edits_pending boolean,
    last_updated varchar(10),
    ended varchar(10),
@@ -63,7 +63,7 @@ create table Artist_Credit_Name(
    position boolean,
    artist integer,
    name varchar(10),
-   join_phrase varchar(0)
+   join_phrase varchar(100)
 );
 
 create table Artist_Type(
@@ -97,7 +97,7 @@ create table Label(
    label_code varchar(10),
    type varchar(10),
    area integer,
-   comment varchar(0),
+   comment varchar(1000),
    edits_pending boolean,
    last_updated varchar(10),
    ended varchar(10)
@@ -140,10 +140,10 @@ create table Place(
    gid varchar(40),
    name varchar(20),
    type boolean,
-   address varchar(0),
+   address varchar(1000),
    area integer,
    coordinates varchar(10),
-   comment varchar(0),
+   comment varchar(1000),
    edits_pending boolean,
    last_updated decimal(29,3),
    begin_date_year varchar(10),
@@ -170,7 +170,7 @@ create table Recording(
    name varchar(40),
    artist_credit integer,
    length integer,
-   comment varchar(0),
+   comment varchar(1000),
    edits_pending boolean,
    last_updated varchar(10),
    video varchar(10)
@@ -188,7 +188,7 @@ create table Release(
    language integer,
    script integer,
    barcode integer,
-   comment varchar(0),
+   comment varchar(1000),
    edits_pending boolean,
    quality varchar(10),
    last_updated decimal(29,3)
@@ -224,7 +224,7 @@ create table Work(
    gid varchar(40),
    name decimal(52,3),
    type varchar(10),
-   comment varchar(0),
+   comment varchar(1000),
    edits_pending boolean,
    last_updated decimal(29,3),
    language varchar(10)
