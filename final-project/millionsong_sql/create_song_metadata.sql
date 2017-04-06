@@ -1,4 +1,4 @@
-create table Song_Metadata_D(
+create table Song_Metadata(
    title varchar(60),
    album varchar(20),
    artist varchar(20),
