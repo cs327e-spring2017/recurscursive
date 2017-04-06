@@ -1,37 +1,44 @@
-set search_path = millionsong;
+set search_path = discog;
 
-\copy Artist_Mbtag from 's3://cs327e-final-project-datasets/million-songs-csv/words.csv'
+\copy Artists from 's3://cs327e-final-project-datasets/million-songs-csv/words.csv'
 iam_role 'arn:aws:iam::531237488045:role/redshift_s3_role'
 region 'us-east-1'
 csv quote '"' ignoreheader 1 trimblanks compupdate ON
 maxerror 50;
 
-\copy Artist_Term from 's3://cs327e-final-project-datasets/million-songs-csv/words.csv'
+\copy Genres from 's3://cs327e-final-project-datasets/discog-csv/words.csv'
 iam_role 'arn:aws:iam::531237488045:role/redshift_s3_role'
 region 'us-east-1'
 csv quote '"' ignoreheader 1 trimblanks compupdate ON
 maxerror 50;
 
-\copy Similar_Artists from 's3://cs327e-final-project-datasets/million-songs-csv/words.csv'
+\copy Labels from 's3://cs327e-final-project-datasets/discog-csv/words.csv'
 iam_role 'arn:aws:iam::531237488045:role/redshift_s3_role'
 region 'us-east-1'
 csv quote '"' ignoreheader 1 trimblanks compupdate ON
 maxerror 50;
 
-\copy Songs_Popularity from 's3://cs327e-final-project-datasets/million-songs-csv/words.csv'
+\copy Releases from 's3://cs327e-final-project-datasets/discog-csv/words.csv'
 iam_role 'arn:aws:iam::531237488045:role/redshift_s3_role'
 region 'us-east-1'
 csv quote '"' ignoreheader 1 trimblanks compupdate ON
 maxerror 50;
 
-\copy Songs_Summary from 's3://cs327e-final-project-datasets/million-songs-csv/words.csv'
+\copy Releases_Artists from 's3://cs327e-final-project-datasets/discog-csv/words.csv'
 iam_role 'arn:aws:iam::531237488045:role/redshift_s3_role'
 region 'us-east-1'
 csv quote '"' ignoreheader 1 trimblanks compupdate ON
 maxerror 50;
 
-\copy Song_Metadata from 's3://cs327e-final-project-datasets/million-songs-metadata-csv/'
+\copy Releases_Genres from 's3://cs327e-final-project-datasets/discog-metadata-csv/'
 iam_role 'arn:aws:iam::531237488045:role/redshift_s3_role'
 region 'us-east-1'
 csv quote '"' ignoreheader 1 trimblanks roundec compupdate ON
 maxerror 50;
+
+\copy Releases_Labels from 's3://cs327e-final-project-datasets/discog-csv/words.csv'
+iam_role 'arn:aws:iam::531237488045:role/redshift_s3_role'
+region 'us-east-1'
+csv quote '"' ignoreheader 1 trimblanks compupdate ON
+maxerror 50;
+
