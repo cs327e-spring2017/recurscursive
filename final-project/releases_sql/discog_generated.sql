@@ -1,4 +1,4 @@
-drop schema if exists discog;
+drop schema if exists discog cascade;
 create schema discog;
 set search_path = discog;
 
