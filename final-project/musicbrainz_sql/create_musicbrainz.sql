@@ -1,4 +1,4 @@
-drop schema if exists musicbrainz;
+drop schema if exists musicbrainz cascade;
 create schema musicbrainz;
 set search_path=musicbrainz;
 
