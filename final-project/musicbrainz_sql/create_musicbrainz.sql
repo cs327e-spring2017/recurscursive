@@ -1,3 +1,7 @@
+drop schema if exists musicbrainz;
+create schema musicbrainz;
+set search_path=discog;
+
 create table Area(
    id integer,
    gid varchar(40),
