@@ -1,6 +1,6 @@
 drop schema if exists millionsong;
 create schema millionsong;
-set_search_path = millionsong;
+set search_path = millionsong;
 
 create table Artist_Mbtag(
    artist_id varchar(20),
