@@ -1,3 +1,4 @@
+drop schema if exists millionsong;
 create schema millionsong;
 set_search_path = millionsong;
 
