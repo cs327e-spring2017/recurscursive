@@ -160,7 +160,7 @@ create table Place_Type(
    name varchar(20),
    parent varchar(10),
    child_order integer,
-   description decimal(173,0),
+   description decimal(38,1),
    gid varchar(40)
 );
 
@@ -208,7 +208,7 @@ create table Release_Status(
    name varchar(20),
    parent varchar(10),
    child_order integer,
-   description decimal(199,0),
+   description decimal(38,1),
    gid varchar(40)
 );
 
@@ -222,7 +222,7 @@ create table Release_Unknown_Country(
 create table Work(
    id integer,
    gid varchar(40),
-   name decimal(52,3),
+   name decimal(29,3),
    type varchar(10),
    comment varchar(1000),
    edits_pending boolean,
@@ -236,7 +236,7 @@ create table Work_Type(
    name varchar(20),
    parent varchar(10),
    child_order integer,
-   description decimal(77,0),
+   description decimal(38,1),
    gid varchar(40)
 );
 
