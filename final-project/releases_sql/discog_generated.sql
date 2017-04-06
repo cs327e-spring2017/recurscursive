@@ -1,3 +1,4 @@
+drop schema if exists discog;
 create schema discog;
 set_search_path = discog;
 
