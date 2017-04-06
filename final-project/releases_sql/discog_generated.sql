@@ -1,3 +1,6 @@
+create schema discog;
+set_search_path = discog;
+
 create table Artists(
    tist_id integer,
    name varchar(10),
