@@ -14,7 +14,7 @@ create table Artist_Term(
 
 create table Similar_Artists(
    target varchar(20),
-   similar varchar(20)
+   similar_ varchar(20)
 );
 
 create table Songs_Popularity(
