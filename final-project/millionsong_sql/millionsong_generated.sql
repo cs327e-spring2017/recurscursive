@@ -1,4 +1,4 @@
-drop schema if exists millionsong;
+drop schema if exists millionsong cascade;
 create schema millionsong;
 set search_path = millionsong;
 
