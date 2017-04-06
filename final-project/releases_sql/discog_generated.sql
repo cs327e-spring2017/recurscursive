@@ -1,6 +1,6 @@
 drop schema if exists discog;
 create schema discog;
-set_search_path = discog;
+set search_path = discog;
 
 create table Artists(
    tist_id integer,
