@@ -1,0 +1,98 @@
+ tist_id |           name            |         realname          
+---------+---------------------------+---------------------------
+  868893 | Melissa Luu               | Melissa Luu
+ 1025325 | Brälke                    | Brälke
+  695310 | Mika Ervaskari            | Mika Ervaskari
+  419329 | Ann Roberts               | Ann Roberts
+   49665 | Jimmy Nazim and O. Replay | Jimmy Nazim and O. Replay
+  256751 | Warren Ellis              | Warren Ellis
+  258583 | Lewis Bledsoe             | Lewis Bledsoe
+ 1244495 | Jamie Ireland             | Jamie Ireland
+  362192 | X-Rated (4)               | X-Rated (4)
+  438739 | Cam & Anz                 | Cam & Anz
+(10 rows)
+
+ genre_id |         name         
+----------+----------------------
+        5 | Funk / Soul
+       11 | Folk World & Country
+        2 | Jazz
+        6 | Stage & Screen
+        8 | Hip Hop
+       13 | Blues
+        4 | Latin
+       15 | Brass & Military
+       10 | Reggae
+        9 | Pop
+(10 rows)
+
+ label_id |            name             
+----------+-----------------------------
+  1143451 | Echosystem Studios
+   118621 | Hand Made Rave
+   793288 | Holliday Addicts
+  1173007 | CIDA
+   583514 | Necro Infernal Blasphemies
+   616696 | Rachid Boulawah Studio
+   656095 | The Space Harajuku
+   704151 | Music Line
+   506791 | Area Leader Music Syndicate
+    74231 | Musical Heritage Society
+(10 rows)
+
+ release_id |                               title                                | num_tracks |  released  | country 
+------------+--------------------------------------------------------------------+------------+------------+---------
+    1596699 | The Sad Sea                                                        |          8 | 2008       | US
+    1136905 | I Owe You Nothing                                                  |          3 | 1988       | US
+    1176010 | Die 7 Todsünden                                                    |          9 | 1957-03-00 | Germany
+     660376 | American IV: The Man Comes Around                                  |         15 | 11/5/2002  | US
+    1711236 | Sun City                                                           |          7 | 1985       | UK
+    1049586 | Special Herbs Vol. 3 & 4                                           |         16 | 2003       | US
+    1267755 | Wines And Spirits                                                  |         12 | 9/25/2007  | US
+     914893 | A Swamp Room Happening Vol. III - Unnoticed Exept By The Third Eye |         15 | 1994       | Germany
+     112043 | Nite Club                                                          |          2 | 2/17/2003  | UK
+    1456882 | Tartafmisid                                                        |          4 | 2007       | France
+(10 rows)
+
+ release_id | artist_id 
+------------+-----------
+    4951591 |    961136
+    9886765 |       194
+    6872197 |     44860
+    6008604 |     55738
+    4083165 |     11202
+    2588175 |    420857
+    9272435 |   5343589
+    2150495 |    160476
+    4859932 |    343684
+    3729797 |   1094461
+(10 rows)
+
+ release_id | genre_id 
+------------+----------
+    1196274 |        1
+     562435 |        2
+     971505 |        9
+     662725 |        3
+      97701 |        1
+    1090912 |        3
+     425628 |        1
+     457728 |        3
+     200420 |        1
+     361302 |        1
+(10 rows)
+
+ release_id | label_id 
+------------+----------
+    7476571 |   369056
+    3660811 |     2311
+    6602966 |   993178
+    5287429 |    39451
+    2714464 |    77117
+    8396451 |      750
+    3862592 |   888888
+    7891351 |   436251
+    8203458 |     5563
+    4310792 |   455311
+(10 rows)
+

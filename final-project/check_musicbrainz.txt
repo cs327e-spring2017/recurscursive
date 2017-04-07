@@ -1,0 +1,256 @@
+   id   |                 gid                  |          name           | type | edits_pending |        last_updated        | begin_date_year | begin_date_month | begin_date_day | end_date_year | end_date_month | end_date_day | ended | comment 
+--------+--------------------------------------+-------------------------+------+---------------+----------------------------+-----------------+------------------+----------------+---------------+----------------+--------------+-------+---------
+  36843 | fa1fbfe1-ad7c-4b8d-a54d-0622eed13dbf | Guérigny                |    3 |             0 | 2013-10-22 15:38:40.603743 |                 |                  |                |               |                |              | f     | 
+  34730 | 6423a530-28c4-4103-99ea-b1a2cbe9c111 | Pazayac                 |    3 |             0 | 2013-10-22 02:42:38.308612 |                 |                  |                |               |                |              | f     | 
+ 110343 | 86e62774-9ad5-4b79-8722-f31c5a0a78b0 | Torrubia de Soria       |    4 |             0 | 2015-02-22 11:56:10.930943 |                 |                  |                |               |                |              | f     | 
+ 108767 | 1154df8a-b0b1-49e3-83ed-e760b6424a40 | Rueda de la Sierra      |    4 |             0 | 2015-02-21 08:52:11.090571 |                 |                  |                |               |                |              | f     | 
+    631 | f77a7f18-a016-4d7b-9fd3-445bec361e77 | Pará                    |    2 |             0 | 2013-11-02 05:14:06.827093 |                 |                  |                |               |                |              | f     | 
+ 107713 | 8b03b9f7-3c3f-4b2a-83a6-ad5070a1f4c4 | La Yesa                 |    4 |             0 | 2015-02-20 12:14:29.320481 |                 |                  |                |               |                |              | f     | 
+ 109547 | 40e8d570-02be-45df-8303-076f3b901eab | Pesaguero               |    4 |             0 | 2015-02-22 10:40:56.597082 |                 |                  |                |               |                |              | f     | 
+  64111 | d6024b30-9a38-4403-b505-5faa345aa638 | Châteauneuf-d'Entraunes |    3 |             0 | 2013-11-01 15:34:15.05418  |                 |                  |                |               |                |              | f     | 
+  67913 | 39492426-953f-481b-b076-c3afb961938f | Hargicourt              |    3 |             0 | 2013-11-06 11:24:10.541942 |                 |                  |                |               |                |              | f     | 
+ 109599 | 49279f3a-69d0-4379-9c23-75c5f476037f | Camaleño                |    4 |             0 | 2015-02-22 10:43:52.239482 |                 |                  |                |               |                |              | f     | 
+(10 rows)
+
+ id |     name     | parent | child_order |                                                                                                                       description                                                                                                                       |                 gid                  
+----+--------------+--------+-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------
+  4 | Municipality |        |           4 | Municipality is used for small administrative divisions which, for urban municipalities, often contain a single city and a few surrounding villages. Rural municipalities typically group several villages together.                                    | 17246454-5ac4-36a1-b81a-4753eb2dab20
+  1 | Country      |        |           1 | Country is used for areas included (or previously included) in ISO 3166-1, e.g. United States.                                                                                                                                                          | 06dd0ae4-8c74-30bb-b43d-95dcedf961de
+  5 | District     |        |           5 | District is used for a division of a large city, e.g. Queens.                                                                                                                                                                                           | 84039871-5e47-38ca-a66a-45e512c8290f
+  2 | Subdivision  |        |           2 | Subdivision is used for the main administrative divisions of a country, e.g. California, Ontario, Okinawa. These are considered when displaying the parent areas for a given area.                                                                      | fd3d44c5-80a1-3842-9745-2c4972d35afa
+  7 | County       |        |           7 | County is used for smaller administrative divisions of a country which are not the main administrative divisions but are also not municipalities, e.g. counties in the USA. These are not considered when displaying the parent areas for a given area. | bcecec27-8bdb-3e00-8254-d948dda502fa
+  6 | Island       |        |           6 | Island is used for islands and atolls which don't form subdivisions of their own, e.g. Skye. These are not considered when displaying the parent areas for a given area.                                                                                | 3f8e7b66-058b-369b-9834-ffa5fcba5641
+  3 | City         |        |           3 | City is used for settlements of any size, including towns and villages.                                                                                                                                                                                 | 6fd8f29a-3d0a-32fc-980d-ea697b69da78
+(7 rows)
+
+   id    |                 gid                  |         name         |      sort_name       | begin_date_year | begin_date_month | begin_date_day | end_date_year | end_date_month | end_date_day | type | area | gender |          comment           | edits_pending |         last_updated          | ended | begin_area | end_area 
+---------+--------------------------------------+----------------------+----------------------+-----------------+------------------+----------------+---------------+----------------+--------------+------+------+--------+----------------------------+---------------+-------------------------------+-------+------------+----------
+    3528 | f1548c5b-329e-4036-921c-02213a04b525 | Uriah Heep           | Uriah Heep           |            1970 |                  |                |               |                |              |    2 |  221 |        |                            |             0 | 2013-10-04 11:23:47.375828+00 | f     |       1178 |         
+  130153 | 17bc7af2-b465-4e46-900e-5d8f4e038a70 | Heptet               | Heptet               |                 |                  |                |               |                |              |      |      |        |                            |             0 |                               | f     |            |         
+ 1238409 | afbc8b38-211e-4a40-812c-16e8e28cb45a | Anders Hall          | Hall, Anders         |                 |                  |                |               |                |              |    1 |  202 |        |                            |             0 | 2015-05-28 23:59:05.64712+00  | f     |            |         
+  846222 | b55447b4-02c5-4ee2-88b5-fe7147cdc983 | Richard Braithwaite  | Braithwaite, Richard |                 |                  |                |               |                |              |    1 |  221 |      1 |                            |             0 | 2011-12-11 11:42:34.781656+00 | f     |            |         
+  537624 | 03134f58-ae01-4472-bb99-791eb2d346ea | Gepel                | Gepel                |                 |                  |                |               |                |              |      |      |        |                            |             0 |                               | f     |            |         
+  978775 | eb25aba7-3f24-4a9f-bb83-7a05bd2d4318 | Paul Rozmus          | Rozmus, Paul         |                 |                  |                |               |                |              |      |      |        |                            |             0 | 2013-02-17 07:44:00.706808+00 | f     |            |         
+ 1423005 | 84deef20-fff8-4698-b6dc-956fa3819ed0 | 박병주               | Park, Byeong-zoo     |                 |                  |                |               |                |              |    1 |  113 |      1 |                            |             0 | 2016-10-25 22:00:38.482542+00 | f     |            |         
+  163057 | 229001a8-a5ee-4ede-8847-52acc33717a3 | Twelve               | Twelve               |                 |                  |                |               |                |              |    1 |      |        | project by Chris Olley     |             0 |                               | f     |            |         
+  889525 | 04bfd0f4-e35e-4fd8-8ee8-a6f1c7ca0dbd | schnellertollermeier | schnellertollermeier |                 |                  |                |               |                |              |    2 |  203 |        |                            |             0 | 2012-05-03 23:27:01.281337+00 | f     |            |         
+  153064 | 6a6f6f58-41e1-42f2-b817-84dd53f07a96 | Hess                 | Hess                 |                 |                  |                |               |                |              |    1 |      |      1 | house artist Heston Barber |             0 | 2014-07-23 22:00:16.297153+00 | f     |            |         
+(10 rows)
+
+   id    |                  name                  | artist_count | ref_count |          created           
+---------+----------------------------------------+--------------+-----------+----------------------------
+  794527 | Psyber                                 |            1 |         2 | 2011-05-16 16:32:11.963929
+ 1676511 | 大槻唯(山下七海)                       |            1 |         6 | 2016-06-19 11:21:56.28012
+  956199 | Jahbestin                              |            1 |         2 | 2012-03-14 12:53:37.992284
+  863421 | Drew Holcomb                           |            1 |        80 | 2011-09-30 13:39:34.559467
+  214921 | The Masterminds                        |            1 |        20 | 2011-05-16 16:32:11.963929
+ 1465682 | Ria Angelina & Lydia Natalia           |            2 |        16 | 2015-04-23 08:09:01.42723
+ 1015385 | Janine Roebuck & Peter Skellern        |            2 |         2 | 2012-07-10 23:22:30.764349
+ 1068576 | Eesti Raadio lasteansambel, Eda Neider |            2 |         5 | 2012-10-20 14:43:00.569171
+ 1047940 | Æþelruna                               |            1 |        21 | 2012-09-09 13:01:16.578769
+ 1059213 | Goldroom                               |            1 |        62 | 2012-10-03 06:01:46.564624
+(10 rows)
+
+ artist_credit | position | artist  |          name           | join_phrase 
+---------------+----------+---------+-------------------------+-------------
+       1070437 |        1 |   38813 | Robben Ford             | 
+       1503453 |        2 |   11776 | B.G.                    | 
+       1526402 |        0 | 1269732 | Meggy                   | 
+       1786646 |        2 |  246042 | Lil’ 1/2 Dead           |  &
+       1494641 |        0 | 1245768 | Pablo Esquire           | 
+       1342438 |        0 |  148332 | Velha Guarda da Portela |  feat.
+       1951611 |        2 |  254672 | Herbert Blomstedt       | 
+        316629 |        0 |  316629 | Gravitron               | 
+       1364042 |        0 |  238347 | Taito Sound Team        | 
+        139143 |        0 |  139143 | Acid Drops              | 
+(10 rows)
+
+ id |   name    | parent | child_order | description |                 gid                  
+----+-----------+--------+-------------+-------------+--------------------------------------
+  1 | Person    |        |           1 |             | b6e035f4-3ce9-331c-97df-83397230b0df
+  5 | Orchestra |      2 |           0 |             | a0b36c92-3eb1-3839-a4f9-4799823f54a5
+  3 | Other     |        |          99 |             | ac897045-5043-3294-969b-187360e45d86
+  4 | Character |        |           3 |             | 5c1375b0-f18d-3db7-a164-a49d7a63773f
+  6 | Choir     |      2 |           0 |             | 6124967d-7e3a-3eba-b642-c9a2ffb44d94
+  2 | Group     |        |           2 |             | e431f5f6-b5d2-343d-8b36-72607fffb74b
+(6 rows)
+
+ id |  name  | parent | child_order | description |                 gid                  
+----+--------+--------+-------------+-------------+--------------------------------------
+  1 | Male   |        |           1 |             | 36d3d30a-839d-3eda-8cb3-29be4384e4a9
+  2 | Female |        |           2 |             | 93452b5a-a947-30c8-934f-6a4056b151c2
+  3 | Other  |        |           3 |             | 081c0bf5-da60-37b0-95f8-2207a3f7f9d6
+(3 rows)
+
+   id   |                 gid                  |              name              | begin_date_year | begin_date_month | begin_date_day | end_date_year | end_date_month | end_date_day | label_code | type | area | comment | edits_pending |        last_updated        | ended 
+--------+--------------------------------------+--------------------------------+-----------------+------------------+----------------+---------------+----------------+--------------+------------+------+------+---------+---------------+----------------------------+-------
+ 107709 | 56637b62-fe1d-4a9a-a6e0-b6c6e63ed56f | Midheaven                      |                 |                  |                |               |                |              |            |      |      |         |             0 | 2015-08-16 19:01:17.822174 | f
+  37857 | db3f2068-77f9-457b-86d7-7dd3c67c01d4 | Taliferro                      |            2009 |                2 |              1 |               |                |              |            |    7 |  222 |         |             0 | 2009-07-04 19:11:25.378779 | f
+  41434 | 338adcbf-8502-4332-8f13-18d010b1472a | RJR                            |                 |                  |                |               |                |              |            |      |      |         |             0 | 2009-11-05 05:33:39.353547 | f
+  36018 | 8b409230-5bf4-415a-8e54-e83fc10da569 | Hot Pockets                    |                 |                  |                |               |                |              |            |    3 |  221 |         |             0 | 2009-04-28 12:03:07.431675 | f
+  92558 | 35efe161-b665-4141-be27-5cef903fd587 | SPACEY                         |                 |                  |                |               |                |              |            |      |  107 |         |             0 | 2014-06-08 13:27:59.798941 | f
+  68536 | deab82f5-9542-49bb-b15f-d7ac5afc36c1 | Document Records               |                 |                  |                |               |                |              |            |    5 |  105 | Bootleg |             0 | 2012-06-25 17:19:43.518135 | f
+  59866 | f66648b7-bf8c-4019-a0d0-da610cafba2d | Asphalt Jingle                 |                 |                  |                |               |                |              |            |      |      |         |             0 | 2011-08-14 22:41:29.295994 | f
+  42065 | 2e03dae7-4138-49f4-8a6d-6b50a2cf015d | Ellel Ministries               |                 |                  |                |               |                |              |            |      |   13 |         |             0 | 2009-11-26 08:08:29.560535 | f
+ 102258 | a6f12c1d-1de5-41ef-83ad-8238232f1911 | Guidance Records               |                 |                  |                |               |                |              |            |      |      |         |             0 | 2015-04-08 05:55:30.217773 | f
+  89839 | 03aa8f74-1a38-4611-bf8e-3e1a40cc63d9 | Only the Girl Inc. Productions |                 |                  |                |               |                |              |            |      |  222 |         |             0 | 2014-03-22 06:36:44.593397 | f
+(10 rows)
+
+  id  | iso_code_2t | iso_code_2b | iso_code_1 |      name       | frequency | iso_code_3 
+------+-------------+-------------+------------+-----------------+-----------+------------
+ 3157 |             |             |            | Kami (Tanzania) |         0 | kcu
+ 5833 |             |             |            | Seget           |         0 | sbg
+ 1383 |             |             |            | Barambu         |         0 | brm
+ 2165 |             |             |            | E               |         0 | eee
+ 6219 |             |             |            | Serili          |         0 | sve
+ 6860 |             |             |            | Lehalurup       |         0 | urr
+ 5478 |             |             |            | Panytyima       |         0 | pnw
+ 2799 |             |             |            | Huastec         |         0 | hus
+ 6310 |             |             |            | Thurawal        |         0 | tbh
+ 7711 |             |             |            | Guibian Zhuang  |         0 | zgn
+(10 rows)
+
+   id    | release | position | format | name | edits_pending |        last_updated        | track_count 
+---------+---------+----------+--------+------+---------------+----------------------------+-------------
+ 2046727 | 1916450 |        1 |     12 |      |             0 | 2017-02-15 09:06:07.04704  |           3
+  791112 |  791112 |        1 |     29 |      |             0 | 2012-06-09 14:12:26.969269 |           2
+  655031 |  655031 |        1 |      1 |      |             0 | 2011-05-16 14:57:06.530063 |           9
+  784802 |  784795 |        2 |      1 |      |             0 | 2011-12-26 23:43:56.515661 |          18
+  956342 |  956342 |        1 |        |      |             0 | 2011-05-16 14:57:06.530063 |           4
+ 1185436 | 1165907 |        1 |     12 |      |             0 | 2012-06-09 20:29:41.800923 |           6
+  688515 |  688515 |        1 |      1 |      |             0 | 2011-05-16 14:57:06.530063 |           3
+ 1787391 | 1690858 |        1 |     34 |      |             0 | 2015-11-21 08:06:37.021628 |           3
+  309952 |  309952 |        1 |      1 |      |             0 | 2011-05-16 14:57:06.530063 |           6
+ 1759576 | 1666947 |       15 |      1 |      |             0 | 2015-10-04 20:14:44.900883 |           7
+(10 rows)
+
+ id |           name           | parent | child_order | year | has_discids |                                            description                                            |                 gid                  
+----+--------------------------+--------+-------------+------+-------------+---------------------------------------------------------------------------------------------------+--------------------------------------
+ 71 | 8" LaserDisc             |      5 |           0 | 1978 | f           |                                                                                                   | 1bb6e33f-6ff6-4449-b407-04cc7a598945
+ 43 | Data CD                  |      1 |           0 |      | f           |                                                                                                   | 37cceb6f-7ca2-321f-b2c5-12312a1a1df1
+ 56 | 7" Shellac               |     53 |           0 |      | f           |                                                                                                   | 682f97ed-517e-3a86-ad66-33f98e864346
+  9 | Cartridge                |     13 |           0 | 1962 | f           |                                                                                                   | 2b240bc1-a4d7-34de-928f-f85e372751bd
+ 59 | VHD                      |     13 |           0 | 1983 | f           | Video High Density (VHD) was a videodisc format which was marketed predominantly in Japan by JVC. | cc98ca24-3ae0-35fd-b311-94e0423a78a7
+ 50 | Edison Diamond Disc      |     13 |           0 | 1912 | f           |                                                                                                   | 1a3a0a66-3c79-3cf9-b7be-fedb00d5ec1d
+ 26 | USB Flash Drive          |     13 |           0 |      | f           |                                                                                                   | d9a5f2e3-6a87-3f0b-9623-95d60d94faff
+ 58 | Pathé disc               |     13 |           0 | 1906 | f           | 90 rpm, vertical-cut shellac discs, produced by the Pathé label from 1906 to 1932.                | 34cc287c-c448-3fe4-90d6-ed3a6fa35fe5
+ 69 | DVDplus (DVD-Video side) |     47 |           1 | 2005 | f           | The DVD (audio) layer of a DVDplus. The CD layer should be added as a separate medium.            | ccef53b5-d41a-391b-b1b3-9ca9a96498e6
+ 52 | 7" Flexi-disc            |     51 |           0 | 1962 | f           |                                                                                                   | da961db2-0ec7-316d-b6f4-5fddba1ca401
+(10 rows)
+
+  id   |                 gid                  |                   name                    | type |                       address                        | area  |     coordinates      |                            comment                            | edits_pending |        last_updated        | begin_date_year | begin_date_month | begin_date_day | end_date_year | end_date_month | end_date_day | ended 
+-------+--------------------------------------+-------------------------------------------+------+------------------------------------------------------+-------+----------------------+---------------------------------------------------------------+---------------+----------------------------+-----------------+------------------+----------------+---------------+----------------+--------------+-------
+ 12512 | 8f5863f6-c21d-4bbb-ad49-12a9eedf6962 | Lonesome Dog Studios                      |    1 |                                                      |  1178 |                      |                                                               |             0 | 2015-07-31 21:20:02.867547 |                 |                  |                |               |                |              | f
+  6651 | c7a34817-60fe-449b-bff4-5512d4b4df4f | Scottish Exhibition and Conference Centre |    3 | Exhibition Way Finnieston, Glasgow, G3 8YW, Scotland |  3855 | (55.860849,-4.28812) | complex; use ONLY if no more specific venue info is available |             0 | 2017-01-19 07:00:20.416252 |            1985 |                9 |              6 |               |                |              | f
+ 14294 | c9f27693-7d1d-41d1-a7dd-43d93144fd60 | Soundhole Studio                          |    1 | 50 Carroll St, Toronto, ON M4M 3G3                   |  5076 |                      |                                                               |             0 | 2015-11-13 14:26:27.792174 |                 |                  |                |               |                |              | f
+ 13410 | 0c2aa3fd-9359-4a9d-b2c7-b9bc6cdd23a6 | Moonraker Restaurant                      |    2 |                                                      | 30978 |                      |                                                               |             0 | 2015-09-19 17:28:05.567685 |                 |                  |                |               |                |              | f
+ 16441 | 6a5df328-12de-4170-8228-ea3e1013145e | Elmwood Funeral Home                      |      |                                                      |  9399 |                      |                                                               |             0 | 2016-02-01 13:12:49.06609  |                 |                  |                |               |                |              | f
+  4116 | 9b81a8f0-4a96-4936-a54a-2400487fd447 | 新宿PIT INN                               |    2 | 〒160-0022 東京都新宿区新宿2-12-4 アコード新宿B1F    |  8395 |                      |                                                               |             0 | 2017-01-25 16:00:28.148976 |                 |                  |                |               |                |              | f
+ 17717 | b83a1dbf-9e4f-4b39-a0aa-6fb7a743bed1 | Danish Radio: Studio 2                    |    1 |                                                      |  7712 |                      |                                                               |             0 | 2016-03-29 12:33:20.384068 |                 |                  |                |               |                |              | f
+  4939 | ee2a3611-0ca4-40a9-bbf3-378c375728cd | Kingsize Soundlabs                        |    1 |                                                      |  7703 |                      |                                                               |             0 | 2014-04-06 22:26:38.074574 |                 |                  |                |               |                |              | f
+  6176 | 31962ed7-de17-4d43-800e-2f14d41fd45e | Warm Butter Design                        |    1 |                                                      |  7703 |                      | art design studio                                             |             0 | 2014-07-02 11:10:37.069556 |            1998 |                  |                |               |                |              | f
+ 17693 | acf5e615-b753-4713-9f43-30a5e8bf4ee9 | Rambler Studio                            |    1 |                                                      |  5060 |                      |                                                               |             0 | 2016-04-04 21:00:19.960831 |                 |                  |                |               |                |              | f
+(10 rows)
+
+ id |        name        | parent | child_order |                                                                                            description                                                                                            |                 gid                  
+----+--------------------+--------+-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------
+  3 | Other              |        |          99 |                                                                                                                                                                                                   | a0df5ead-0bd6-33d8-8444-855a9f3e9970
+  4 | Stadium            |        |           3 | A place whose main purpose is to host outdoor sport events, typically consisting of a pitch surrounded by a structure for spectators with no roof, or a roof which can be retracted.              | 62664fbd-cd55-3b5f-a5ea-fb5d1bc0113c
+  6 | Religious building |        |           5 | A place that has worship or religious studies as its main function. Religious buildings often host concerts and serve as recording locations, especially for classical music.                     | a120ca4a-69e9-3c0e-bc09-21cae26eb621
+  5 | Indoor arena       |        |           4 | A place consisting of a large enclosed area with a central event space surrounded by tiered seating for spectators, which can be used for indoor sports, concerts and other entertainment events. | a77c11f6-82fa-3cc0-9041-ac60e5f6e024
+  1 | Studio             |        |           1 | A place designed for non-live production of music, typically a recording studio.                                                                                                                  | 05fa6a09-ff92-3d34-bdbb-5141d3c24f38
+  2 | Venue              |        |           2 | A place that has live artistic performances as one of its primary functions, such as a concert hall.                                                                                              | cd92781a-a73f-30e8-a430-55d7521338db
+(6 rows)
+
+    id    |                 gid                  |                  name                  | artist_credit | length |                                 comment                                 | edits_pending |         last_updated          | video 
+----------+--------------------------------------+----------------------------------------+---------------+--------+-------------------------------------------------------------------------+---------------+-------------------------------+-------
+ 12245940 | c3d6e83b-7130-486a-bfbb-64af644800f6 | [Armin van Buuren talking with Mat Zo] |         97546 | 175000 | live, 2010-04-24: A State of Trance 450: Hala Stulecia, Wroclaw, Poland |             0 | 2013-05-20 10:00:54.881359+00 | f
+  4280113 | 0df293a0-535e-471d-ad2b-fd81d2f33808 | Annum per annum: III. Gloria           |        897836 |  59760 |                                                                         |             0 | 2014-04-16 10:34:54.689577+00 | f
+  7766865 | 7deb4562-46d9-4624-96f2-ee823e09c16e | Gorgeous                               |        120147 | 228000 |                                                                         |             0 | 2015-08-14 22:27:58.769426+00 | f
+  8484682 | d294cc7d-e651-4957-96b4-bce12071cbb5 | Ferien im Vatikan                      |        512970 | 230000 |                                                                         |             0 |                               | f
+ 17706552 | 9adc88f4-8236-4b17-882c-e4a0876245cc | Ein Gebet                              |        866372 | 158000 |                                                                         |             0 | 2015-04-25 12:26:15.187162+00 | f
+  8361376 | 0426a30e-941d-4c59-ae7a-a8c23fa69fe5 | Changing                               |         12653 | 339000 |                                                                         |             0 |                               | f
+ 18605028 | 4dcc1531-7662-492b-8d6d-92833a35eaa0 | I Don't Smoke (radio edit)             |       1003390 |        |                                                                         |             0 | 2015-12-08 10:01:41.096465+00 | f
+ 19598074 | ddb59c4f-23ab-428e-b09b-7ddc2bab2323 | Je suis bon garçon                     |       1699264 | 214000 |                                                                         |             0 | 2016-08-05 12:23:20.947478+00 | f
+  5006554 | 935ad0eb-bd53-42a4-8677-21c51f8512ee | Get Ya'r Freak Off                     |        311745 |  71000 |                                                                         |             0 |                               | f
+ 19092654 | 6f888358-8cd9-4ee5-8d14-76ee1970d458 | Mr P.C. (1962, High Flying)            |         30404 | 196546 |                                                                         |             0 | 2016-03-25 19:21:40.447571+00 | f
+(10 rows)
+
+   id    |                 gid                  |               name                | artist_credit | release_group | status | packaging | language | script |    barcode    | comment | edits_pending | quality |        last_updated        
+---------+--------------------------------------+-----------------------------------+---------------+---------------+--------+-----------+----------+--------+---------------+---------+---------------+---------+----------------------------
+ 1047697 | 6613c51a-1c6b-4b4c-b1ff-99e5bd16fe88 | Jack’s Alive                      |        827757 |       1073277 |      1 |           |      120 |     28 |               |         |             0 |      -1 | 2011-06-23 18:00:05.762213
+ 1461063 | 40e04e5c-c86e-4577-91fa-d288b4cf0e9b | Воскреснет, умрет и родится       |       1347662 |       1403158 |      1 |         8 |          |     31 |               |         |             0 |      -1 | 2014-08-16 05:00:33.596814
+  841816 | ba362209-89a1-45c9-857d-f78aac5ff15f | Don't Say a Word                  |        728621 |       1057688 |      1 |           |      120 |     28 |               |         |             0 |      -1 | 2011-03-29 18:28:18.507608
+  926138 | 259d240b-2430-4f74-b799-12206cbc2d0b | Outport People                    |        203419 |        289569 |      1 |         4 |      120 |     28 |               |         |             0 |      -1 | 2015-04-08 23:05:18.951062
+ 1571870 | a348ce1a-40dd-4d4b-a494-8a61c707cc13 | The Weight of Your Love           |        226505 |       1266491 |      1 |         3 |          |        | 4897028493350 |         |             0 |      -1 | 2015-03-07 15:01:56.002031
+ 1441822 | 9169baa7-ec4c-44bd-bfc0-a67c78a0598e | In the Red                        |        379875 |        562595 |      1 |         1 |      120 |     28 | 5708422000091 |         |             0 |      -1 | 2014-08-06 18:01:03.546335
+  189008 | 99474d87-3fd0-476d-bb79-ecb3b6fb2600 | Mythos                            |         43578 |        118733 |      1 |           |      120 |     28 | 4029758068120 |         |             0 |      -1 | 
+  475773 | e7c019fe-abe5-44d8-8841-208902a26b42 | Ti'Zozios : Chansons et comptines |        180929 |        785575 |      1 |           |      134 |     28 | 3700045231021 |         |             0 |      -1 | 2008-12-15 10:27:49.019869
+ 1851683 | 44444633-3dd3-433c-ac99-550407e03e6d | The Caterpillar                   |        279147 |       1717911 |      1 |         2 |      120 |     28 |               |         |             0 |      -1 | 2016-10-28 02:02:10.446527
+ 1509656 | b5db9dd9-c97e-4306-96f8-3eeb74840dab | 月光蟲                            |        606006 |       1448653 |      1 |           |      198 |     85 | 4988061880037 |         |             0 |      -1 | 2016-10-01 22:00:29.789699
+(10 rows)
+
+ id |          name          | parent | child_order |                        description                         |                 gid                  
+----+------------------------+--------+-------------+------------------------------------------------------------+--------------------------------------
+  4 | Cardboard/Paper Sleeve |        |           0 |                                                            | f7101ce3-0384-39ce-9fde-fbbd0044d35f
+ 16 | Super Jewel Box        |        |           0 |                                                            | dfb7da53-866f-4dfd-a016-80bafaeff3db
+ 10 | Fatbox                 |        |           0 |                                                            | 57429523-ffe6-3336-9381-32565c142c18
+ 17 | Digibook               |        |           0 | A perfect bound book with a sleeve at the end to hold a CD | 9f2e13bc-f84f-428a-8342-fd86ece7fc4d
+  9 | Book                   |        |           0 |                                                            | d60b6157-79fe-3913-ab8b-23b32de8690d
+  5 | Other                  |        |           1 |                                                            | 815b7785-8284-3926-8f04-e48bc6c4d102
+ 11 | Snap Case              |        |           0 |                                                            | 935f2847-8083-3422-8f0d-d7516fcda682
+  8 | Cassette Case          |        |           0 |                                                            | c70b737a-0114-39a9-88f7-82843e54f906
+  1 | Jewel Case             |        |           0 | The traditional CD case, made of hard, brittle plastic.    | ec27701a-4a22-37f4-bfac-6616e0f9750a
+  3 | Digipak                |        |           0 |                                                            | 8f931351-d2e2-310f-afc6-37b89ddba246
+(10 rows)
+
+ id |      name      | parent | child_order |                                                                                               description                                                                                               |                 gid                  
+----+----------------+--------+-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------
+  1 | Official       |        |           1 | Any release officially sanctioned by the artist and/or their record company. Most releases will fit into this category.                                                                                 | 4e304316-386d-3409-af2e-78857eec5cfe
+  3 | Bootleg        |        |           3 | An unofficial/underground release that was not sanctioned by the artist and/or the record company. This includes unofficial live recordings and pirated releases.                                       | 1156806e-d06a-38bd-83f0-cf2284a808b9
+  4 | Pseudo-Release |        |           4 | An alternate version of a release where the titles have been changed. These don't correspond to any real release and should be linked to the original release using the transl(iter)ation relationship. | 41121bb9-3413-3818-8a9a-9742318349aa
+  2 | Promotion      |        |           2 | A give-away release or a release intended to promote an upcoming official release (e.g. pre-release versions, releases included with a magazine, versions supplied to radio DJs for air-play).          | 518ffc83-5cde-34df-8627-81bff5093d92
+(4 rows)
+
+ release | date_year | date_month | date_day 
+---------+-----------+------------+----------
+ 1212247 |      2012 |          7 |       17
+ 1179399 |      2011 |            |         
+ 1884025 |      2015 |            |         
+ 1471811 |      2011 |          3 |        7
+ 1002775 |      1998 |            |         
+ 1209773 |      2012 |         10 |       13
+ 1642785 |      2010 |            |         
+ 1385819 |      1997 |            |         
+ 1517170 |      2014 |          6 |       14
+ 1605488 |      2015 |          2 |        3
+(10 rows)
+
+    id    |                 gid                  |                         name                         | type | comment | edits_pending |        last_updated        | language 
+----------+--------------------------------------+------------------------------------------------------+------+---------+---------------+----------------------------+----------
+ 13080635 | 51300e24-cf21-47d2-b124-884777ec880f | 50 Sächelchen: Trauerlied                            |      |         |             0 | 2017-02-17 14:03:03.531512 |         
+  7368872 | a9c73907-3d99-3a61-b01d-17ae6a159edf | Mary Go Round                                        |      |         |             0 |                            |         
+ 13054907 | b735a657-8748-4036-936c-b9466be3df93 | No More Subliminal Shit                              |   17 |         |             0 | 2016-12-24 05:42:03.091574 |      120
+ 12460952 | a2b2d5dc-bb12-4d20-9e74-60a49d92a682 | Violin Concerto no. 7 in A minor, op. 9: I. Moderato |      |         |             0 | 2013-01-11 13:14:24.532396 |         
+ 10528228 | 80899c44-5acf-3009-bc3f-0ea7bf0b69ef | No Provenance                                        |      |         |             0 |                            |         
+ 12851315 | 305ee311-a26e-491c-9308-b70206f08da4 | Infloreste iarbă in camp (The Fields Are Blooming)   |      |         |             0 | 2015-06-29 18:17:52.435659 |         
+ 12544744 | 5a66a519-d7f5-4d43-a2cb-b732d3ce1ef8 | Qui saura                                            |   17 |         |             0 | 2012-11-06 22:41:32.577831 |      134
+ 12945130 | cc04c91e-e8b4-438d-946f-d22da15c19e2 | A Tempting Offer                                     |   17 |         |             0 | 2016-03-26 13:57:26.367788 |      120
+  4953304 | 6bfd8e6b-6b32-33c1-b4b2-86626dbee4f2 | On the Slaughterfront                                |      |         |             0 |                            |         
+ 12932567 | 7329b328-34bb-47a0-89d7-c12609e153a4 | Birioulki, op. 2                                     |      |         |             0 | 2016-02-20 23:58:40.20149  |      486
+(10 rows)
+
+ id |   name   | parent | child_order |                                                                                                                        description                                                                                                                        |                 gid                  
+----+----------+--------+-------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------
+  8 | Mass     |        |           2 | A mass is a choral composition that sets the invariable portions of the Christian Eucharistic liturgy (Kyrie - Gloria - Credo - Sanctus - Benedictus - Agnus Dei, with other portions sometimes added) to music.                                          | 9fe2ca27-80b6-3a27-8c2b-895ec7f87917
+ 11 | Oratorio |        |           2 | An oratorio is a large (usually sacred) musical composition including an orchestra, a choir, and soloists. While it has characters and a plot, it is usually not performed theatrically (it lacks costumes, props and strong character interaction).      | 308d1000-e97c-3629-b954-68505cf0aa30
+ 16 | Symphony |        |           2 | A symphony is an extended composition, almost always scored for orchestra without soloists.                                                                                                                                                               | 174314aa-0aa4-30cf-96a6-50b281d8d208
+  6 | Suite    |        |           2 | A suite is an ordered set of instrumental or orchestral pieces normally performed in a concert setting. They may be extracts from a ballet or opera, or entirely original movements.                                                                      | 212bf9fb-ce4f-396e-87ca-3db671c085fb
+ 28 | Play     |        |           2 | A play is a form of literature usually consisting of scripted dialogue between characters, and intended for theatrical performance rather than just reading.                                                                                              | db708738-f2b6-3e4e-8f23-1661a3395947
+ 10 | Opera    |        |           2 | An opera is a dramatised work (text + musical score) for singers and orchestra/ensemble. In true operas all dialog is sung, through arias and recitatives, but some styles of opera include spoken dialogue.                                              | d8059ee8-cb37-3351-9ca4-23978567339f
+ 24 | Operetta |        |           2 | The operetta is a genre of light opera, in terms both of music and subject matter. Operettas are generally short and include spoken parts.                                                                                                                | 6d51f760-9d53-3856-a92f-e53d9d82ae5b
+ 29 | Musical  |        |           2 | Musical theatre is a form of theatrical performance that combines songs, spoken dialogue, acting, and dance.                                                                                                                                              | 9ca5e067-acf7-3cd6-baa4-92bf1975bf24
+ 23 | Prose    |        |           2 | This represents literary works written in prose, that is, written in relatively ordinary language without metrical structure (e.g. novels, short stories, essays...).                                                                                     | 78a8e727-edc2-35b9-8829-a46111ef6df9
+ 17 | Song     |        |           1 | A song is in its origin (and still in most cases) a composition for voice, with or without instruments, performed by singing. This is the most common form by far in folk and popular music, but also fairly common in a classical context ("art songs"). | f061270a-2fd6-32f1-a641-f0f8676d14e6
+(10 rows)
+

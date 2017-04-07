@@ -35,4 +35,4 @@ copy Song_Metadata from 's3://cs327e-final-project-datasets/million-songs-metada
 iam_role 'arn:aws:iam::050717752520:role/redshift_s3_role'
 region 'us-east-1'
 csv quote '"' ignoreheader 1 trimblanks roundec compupdate ON
-maxerror 50;
+maxerror 3000;
