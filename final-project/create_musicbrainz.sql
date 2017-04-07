@@ -5,7 +5,7 @@ set search_path=musicbrainz;
 create table Area(
    id integer,
    gid varchar(40),
-   name varchar(10),
+   name varchar(1000),
    type boolean,
    edits_pending boolean,
    last_updated decimal(29,3),
