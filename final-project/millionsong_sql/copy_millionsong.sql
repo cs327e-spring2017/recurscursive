@@ -1,4 +1,7 @@
+\c dev;
+
 set search_path = millionsong;
+
 
 \copy Artist_Mbtag from 's3://cs327e-final-project-datasets/million-songs-csv/artist_mbtag.csv'
 iam_role 'arn:aws:iam::050717752520:role/redshift_s3_role'

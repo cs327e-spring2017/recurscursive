@@ -2,13 +2,13 @@ set search_path = discog;
 
 \copy Artists from 's3://cs327e-final-project-datasets/discog-csv/artists.csv'
 iam_role 'arn:aws:iam::050717752520:role/redshift_s3_role'
-region 'us-east-1'
+region 'us-west-1'
 csv quote '"' ignoreheader 1 trimblanks compupdate ON
 maxerror 50;
 
 \copy Genres from 's3://cs327e-final-project-datasets/discog-csv/genres.csv'
 iam_role 'arn:aws:iam::050717752520:role/redshift_s3_role'
-region 'us-east-1'
+region 'us-west-2'
 csv quote '"' ignoreheader 1 trimblanks compupdate ON
 maxerror 50;
 
