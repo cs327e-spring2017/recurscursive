@@ -3,13 +3,13 @@ create schema millionsong;
 set search_path = millionsong;
 
 create table Artist_Mbtag(
-   artist_id varchar(20),
-   mbtag varchar(10)
+   artist_id varchar(200),
+   mbtag varchar(1000)
 );
 
 create table Artist_Term(
-   artist_id varchar(20),
-   term varchar(10)
+   artist_id varchar(200),
+   term varchar(1000)
 );
 
 create table Similar_Artists(
@@ -25,12 +25,12 @@ create table Songs_Popularity(
 
 create table Songs_Summary(
    track_id varchar(20),
-   title varchar(20),
-   song_id varchar(20),
-   release varchar(20),
-   artist_id varchar(20),
-   artist_mbid varchar(40),
-   artist_name decimal(7,3),
+   title varchar(2000),
+   song_id varchar(200),
+   release varchar(2000),
+   artist_id varchar(200),
+   artist_mbid varchar(400),
+   artist_name varchar(1000),
    duration decimal(9,3),
    artist_familiarity decimal(14,3),
    artist_hotttnesss decimal(14,3),
