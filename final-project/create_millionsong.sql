@@ -317,7 +317,7 @@ create table Song_Metadata(
    segments_pitches_8_min decimal(4,2),
    segments_pitches_8_stddev decimal(19,3),
    segments_pitches_8_count integer,
-   segments_pitches_8_sum decimal(20,20),
+   segments_pitches_8_sum decimal(38,18),
    segments_pitches_9_avg decimal(19,3),
    segments_pitches_9_max decimal(3,1),
    segments_pitches_9_min decimal(21,3),
