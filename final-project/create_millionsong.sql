@@ -38,9 +38,9 @@ create table Songs_Summary(
 );
 
 create table Song_Metadata(
-   title varchar(60),
-   album varchar(20),
-   artist varchar(20),
+   title varchar(600),
+   album varchar(500),
+   artist varchar(200),
    duration decimal(8,3),
    sample_rate integer,
    artist_7digitalid integer,
@@ -185,7 +185,7 @@ create table Song_Metadata(
    musette boolean,
    united_states boolean,
    artist_playmeid integer,
-   audio_md5 varchar(40),
+   audio_md5 varchar(400),
    danceability decimal(3,1),
    end_fade_in decimal(19,3),
    energy decimal(3,1),
@@ -201,9 +201,9 @@ create table Song_Metadata(
    tempo decimal(18,3),
    time_signature integer,
    time_signature_confidence decimal(19,3),
-   track_id varchar(20),
+   track_id varchar(700),
    track_7digitalid integer,
-   year boolean,
+   year integer,
    bars_confidence_avg decimal(20,3),
    bars_confidence_max decimal(5,3),
    bars_confidence_min decimal(3,1),

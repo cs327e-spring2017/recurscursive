@@ -1,5 +1,3 @@
-\c dev;
-
 set search_path = millionsong;
 
 
