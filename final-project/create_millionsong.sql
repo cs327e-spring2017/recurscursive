@@ -89,7 +89,7 @@ create table Song_Metadata(
    merengue boolean,
    karaokee boolean,
    latin boolean,
-   8bit boolean,
+   eight_bit boolean,
    gospel boolean,
    bossa_nova boolean,
    electronic boolean,
