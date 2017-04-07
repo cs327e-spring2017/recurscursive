@@ -4,8 +4,8 @@ set search_path = discog;
 
 create table Artists(
    tist_id integer,
-   name varchar(10),
-   realname varchar(20)
+   name varchar(1000),
+   realname varchar(1000)
 );
 
 create table Genres(
@@ -15,15 +15,15 @@ create table Genres(
 
 create table Labels(
    label_id integer,
-   name varchar(10)
+   name varchar(1000)
 );
 
 create table Releases(
    release_id integer,
-   title varchar(30),
+   title varchar(100),
    num_tracks integer,
-   released varchar(10),
-   country varchar(10)
+   released varchar(1000),
+   country varchar(1000)
 );
 
 create table Releases_Artists(
@@ -33,7 +33,7 @@ create table Releases_Artists(
 
 create table Releases_Genres(
    release_id integer,
-   genre_id boolean
+   genre_id smallint
 );
 
 create table Releases_Labels(
