@@ -10,7 +10,7 @@
 4) What is the total number of tracks released by a given artist? 
 -----Use Artist, releases, release_artist from "Discog" 
 
-5) In what country is the label that made <insert album>? 
+5) In what country is the label that made Moonchildren EP? 
 -----Use Area and label from "musicbrainz" ;labels, releases, releases_labels in "Discog"
 
 6) How many albums had at least 10 tracks and were released in Sweden? 
