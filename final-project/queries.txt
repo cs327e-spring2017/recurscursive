@@ -14,7 +14,7 @@
 -----Use Area and label from "musicbrainz" ;labels, releases, releases_labels in "Discog"
 
 6) How many albums had at least 10 tracks and were released in an unknown country? 
------Use release, release_unknown_country from "Musicbrainz"
+-----Use release, release_unknown_country from "Musicbrainz"; Use releases from "Discog"
 
 7) How many orchestrial artists performed in studios? 
 -----Use artist_type, artist, area, place, place_type from "Musicbrainz"
