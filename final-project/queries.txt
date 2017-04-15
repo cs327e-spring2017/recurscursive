@@ -7,7 +7,7 @@
 3) How many songs were released in cassette form in 1964? 
 -----Use medium and medium_format from "musicbrainz
 
-4) What is the total number of tracks released by a given artist? 
+4) What is the highest number of albums released by a single artist? 
 -----Use Artist, releases, release_artist from "Discog" 
 
 5) In what country is the label that made Moonchildren EP? 
