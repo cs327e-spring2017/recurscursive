@@ -10,10 +10,10 @@
 4) What is the highest number of albums released by a single artist? 
 -----Use Artist, releases, release_artist from "Discog" 
 
-5) In what countries are the labels that have made albums named "Stalker"? 
+5) In what countries/Area are the labels that have made albums named "Stalker"? 
 -----Use Area and label from "musicbrainz" ;labels, releases, releases_labels in "Discog"
 
-6) How many orchestrial artists performed in studios? 
+6) How many group artists played in studios? 
 -----Use artist_type, artist, area, place, place_type from "Musicbrainz"
 
 7) What is the total play count in a given year (input year) a specific user played? 
