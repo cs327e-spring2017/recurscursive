@@ -10,7 +10,7 @@
 4) What is the highest number of albums released by a single artist? 
 -----Use Artist, releases, release_artist from "Discog" 
 
-5) In what country is the label that made Moonchildren EP? 
+5) In what countries are the labels that have made albums named "Stalker"? 
 -----Use Area and label from "musicbrainz" ;labels, releases, releases_labels in "Discog"
 
 (UNUSED) 6) How many albums were released in an unknown country? 
