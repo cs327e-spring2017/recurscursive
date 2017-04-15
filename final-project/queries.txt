@@ -1,8 +1,8 @@
 1) What artist has the most "artist credits" (featured) across all recordings? 
 -----Use recording, artist credit, artist_credit_name from "musicbrainz" 
 
-2) How many official German releases are in the Digipak packaging? 
------Use Release, release_packaging, release_Status, language from "musicbrainz"
+2) How many official releases are in the Digipak packaging? 
+-----Use Release, release_packaging, release_Status from "musicbrainz"
 
 3) How many songs were released in cassette form in a given year (user input year)? 
 -----Use medium and medium_format from "musicbrainz
