@@ -4,7 +4,7 @@
 2) How many official releases are in the Digipak packaging? 
 -----Use Release, release_packaging, release_Status from "musicbrainz"
 
-3) How many songs were released in cassette form in a given year (user input year)? 
+3) How many songs were released in cassette form in 1964? 
 -----Use medium and medium_format from "musicbrainz
 
 4) What is the total number of tracks released by a given artist? 
