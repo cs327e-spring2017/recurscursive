@@ -13,7 +13,7 @@
 5) In what country is the label that made Moonchildren EP? 
 -----Use Area and label from "musicbrainz" ;labels, releases, releases_labels in "Discog"
 
-6) How many albums had at least 10 tracks and were released in Sweden? 
+6) How many albums had at least 10 tracks and were released in an unknown country? 
 -----Use release, release_unknown_country from "Musicbrainz"
 
 7) How many orchestrial artists performed in studios? 
