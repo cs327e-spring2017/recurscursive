@@ -1,5 +1,7 @@
+/*
 drop schema if exists unified cascade;
 create schema unified;
+
 set search_path = unified;
 
 
@@ -99,3 +101,44 @@ from millionsong.Songs_Popularity;
 
 create table unified.MS_Songs_Summary as select track_id, ctitle as title, song_id, year
 from millionsong.Songs_Summary;
+*/
+
+--1
+create or replace view v_artist_credits_from_recordings as SELECT MB_Artist_Credit_Name.name 
+FROM MB_Recording 
+JOIN MB_Artist_Credit 
+ON (MB_Recording.id = MB_Artist_Credit.id) 
+JOIN MB_Artist_Credit_Name 
+ON (MB_Artist_Credit_Name.artist_credit = MB_Artist_Credit.id)
+GROUP BY MB_Artist_Credit_Name.name
+ORDER BY COUNT(ref_count) DESC LIMIT 1;
+
+
+--2
+create or replace view v_digipak_releases as SELECT COUNT(MB_Release.id)
+FROM MB_Release 
+JOIN MB_Release_Packaging ON (MB_Release_Packaging.id = MB_Release.packaging) 
+JOIN MB_Release_Status ON (MB_Release_Status.id = MB_Release.status) 
+WHERE MB_Release_Packaging.name = 'Digipak' AND MB_Release_Status.name = 'Official';
+
+
+
+--3
+create or replace view v_cassette_format as SELECT COUNT(MB_Medium.id) 
+FROM MB_Medium
+JOIN MB_Medium_Format ON (MB_Medium_Format.id = MB_Medium.format)
+WHERE MB_Medium_Format.year = 1964 AND MB_Medium_Format.name = 'Cassette';
+
+
+
+--4
+create or replace view v_albums_released as SELECT COUNT(D_Releases.release_id)
+FROM D_Releases
+JOIN D_Releases_Artists ON (D_Releases_Artists.release_id = D_Releases.release_id)
+JOIN D_Artists ON (D_Releases_Artists.artist_id = D_Artists.tist_id)
+GROUP BY D_Releases.release_id
+ORDER BY COUNT(D_Releases.num_tracks) DESC LIMIT 1; 
+
+
+
+--5
