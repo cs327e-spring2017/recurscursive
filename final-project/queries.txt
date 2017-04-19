@@ -16,7 +16,7 @@
 6) How many group artists played in studios? 
 -----Use artist_type, artist, area, place, place_type from "Musicbrainz"
 
-7) What is the total play count in a given year (input year) a specific user played? 
+7) What is the total play count in a given year a specific user played? 
 -----Use songs_summary and songs_popularity from "Millionsongs"
 
 8) What is the "artist term" and/or "mbtag" given a specific artist id? 
@@ -27,6 +27,3 @@
 
 10) How many female artists are from islands? 
 -----Use gender, artist, area, area_type from "Musicbrainz"
-
-11) In what year was a given song released?
------Use recording "Musicbrainz" ; song_summary from "Millionsong"
