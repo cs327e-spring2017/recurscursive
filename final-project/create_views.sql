@@ -1,21 +1,21 @@
 set search_path = unified;
 
 -- Time: 2584.113 ms
-create or replace view v_artist_credits_recordings as SELECT MB_Artist_Credit_Name.name 
+create or replace view v_artist_credits_recordings as SELECT MB_Artist_Credit_Name.name, COUNT(MB_Artist_Credit.ref_count)
 FROM MB_Recording 
 JOIN MB_Artist_Credit 
 ON (MB_Recording.id = MB_Artist_Credit.id) 
 JOIN MB_Artist_Credit_Name 
 ON (MB_Artist_Credit_Name.artist_credit = MB_Artist_Credit.id)
-GROUP BY MB_Artist_Credit_Name.name
-ORDER BY COUNT(ref_count) DESC LIMIT 1;
+GROUP BY MB_Artist_Credit_Name.name, MB_Artist_Credit.ref_count
+ORDER BY COUNT(MB_Artist_Credit.ref_count) DESC LIMIT 5;
 
 
 -- Time: 183.416 ms
-create or replace view v_digipak_releases as SELECT COUNT(MB_Release.id)
+create or replace view v_digipak_releases as SELECT COUNT(MB_Release.id) 
 FROM MB_Release 
 JOIN MB_Release_Packaging ON (MB_Release_Packaging.id = MB_Release.packaging) 
-JOIN MB_Release_Status ON (MB_Release_Status.id = MB_Release.status) 
+JOIN MB_Release_Status ON (MB_Release_Status.id = MB_Release.status)
 WHERE MB_Release_Packaging.name = 'Digipak' AND MB_Release_Status.name = 'Official';
 
 -- Time: 158.538 ms

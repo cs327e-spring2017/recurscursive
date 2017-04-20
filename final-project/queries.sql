@@ -1,14 +1,14 @@
 set search_path = unified;
 
 --1
-SELECT MB_Artist_Credit_Name.name 
+SELECT MB_Artist_Credit_Name.name, COUNT(MB_Artist_Credit.ref_count) 
 FROM MB_Recording 
 JOIN MB_Artist_Credit 
 ON (MB_Recording.id = MB_Artist_Credit.id) 
 JOIN MB_Artist_Credit_Name 
 ON (MB_Artist_Credit_Name.artist_credit = MB_Artist_Credit.id)
 GROUP BY MB_Artist_Credit_Name.name
-ORDER BY COUNT(ref_count) DESC LIMIT 1; 
+ORDER BY COUNT(MB_Artist_Credit.ref_count) DESC LIMIT 5; 
 
 --2
 SELECT COUNT(MB_Release.id)
