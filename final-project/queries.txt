@@ -1,29 +1,29 @@
-1) What artist has the most "artist credits" (featured) across all recordings? 
+1) What 5 artists are featured the most across all recordings? 
 -----Use recording, artist credit, artist_credit_name from "musicbrainz" 
 
-2) How many official releases are in the Digipak packaging? 
+2) What is the distribution of packaging across official releases? 
 -----Use Release, release_packaging, release_Status from "musicbrainz"
 
-3) How many songs were released in cassette form in 1964? 
+3) What is the distribution among the top 20 most common formats? 
 -----Use medium and medium_format from "musicbrainz
 
-4) What is the highest number of albums released by a single artist? 
+4) Which 5 artists have the most releases? 
 -----Use Artist, releases, release_artist from "Discog" 
 
-5) In what countries/Area are the labels that have made albums named "Stalker"? 
+5) How often has 'Stalker' appeared in releases across the world?
 -----Use Area and label from "musicbrainz" ;labels, releases, releases_labels in "Discog"
 
-6) How many group artists played in studios? 
+6) What is the distribution of artist recording location? 
 -----Use artist_type, artist, area, place, place_type from "Musicbrainz"
 
-7) What is the total play count in a given year a specific user played? 
+7) What is the play count of the song 'Hello' over the different years of which it is played? 
 -----Use songs_summary and songs_popularity from "Millionsongs"
 
-8) What is the "artist term" and/or "mbtag" given a specific artist id? 
+8) What is the distribution of genres (term)? 
 -----Use artist_term, artist_mbtag, and artists from "Millionsongs"
 
-9) How many rock songs were released in the US? 
+9) What is the distribution of genres? 
 -----Use releases, genres, and releases_genre from "Discog"
 
-10) How many female artists are from islands? 
+10) What is the disribution of artists' genders across islands? 
 -----Use gender, artist, area, area_type from "Musicbrainz"
